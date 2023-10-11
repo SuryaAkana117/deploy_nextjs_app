@@ -1,12 +1,14 @@
 #!/bin/bash
 
-# Source the NVM environment
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads NVM
-sudo chown -R ubuntu:ubuntu /home/ubuntu/deploy_nextjs_app
+
+
+
 
 cd /home/ubuntu/deploy_nextjs_app
+sudo chown -R ubuntu:ubuntu /home/ubuntu/deploy_nextjs_app
 git pull origin master
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads NVM
 sudo nvm use v16
 
 # Source Yarn environment (if installed globally)
