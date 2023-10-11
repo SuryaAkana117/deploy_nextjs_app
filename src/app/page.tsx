@@ -34,7 +34,7 @@ export default function Home() {
           <h2 className={inter.className}>
             5minslearn <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Learn tech in 5mins and you will become like pradeep</p>
+          <p className={inter.className}>Learn tech in 5mins, late ga nerchukunte na tappu kadhu roy</p>
         </a>
 
         
