@@ -10,8 +10,8 @@ git pull origin master
 #nvm use v16
 
 # Source Yarn environment (if installed globally)
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-#yarn install &&
-yarn build &&
+yarn install &&
+npm run build &&
 pm2 restart next_hello_world_app
