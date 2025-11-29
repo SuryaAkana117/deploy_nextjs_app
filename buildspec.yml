@@ -3,12 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing Node dependencies"
-      - npm install
-  build:
-    commands:
-      - echo "Building Next.js"
-      - npm run build
+      - echo "No Build during this stage"
 
 artifacts:
   files:
