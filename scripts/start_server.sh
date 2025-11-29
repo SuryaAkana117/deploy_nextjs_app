@@ -2,13 +2,13 @@
 cd /home/ec2-user/myapp
 
 echo "Cleaning node_modules"
-sudo rm -rf node_modules
+rm -rf *
 
 echo "Installing dependencies"
-sudo npm install
+npm install
 
 echo "Building the Next.js app"
-sudo npm run build
+npm run build
 
 echo "Restarting PM2"
-pm2 restart app1
+restart app1
