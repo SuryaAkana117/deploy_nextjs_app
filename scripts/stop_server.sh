@@ -1,4 +1,6 @@
 #!/bin/bash
+export NVM_DIR="$HOME/.nvm"
+. "$NVM_DIR/nvm.sh"
 cd /home/ec2-user/myapp
 echo "Cleaning node_modules"
 sudo rm -rf *

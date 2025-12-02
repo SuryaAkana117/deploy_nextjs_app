@@ -4,10 +4,10 @@ export NVM_DIR="$HOME/.nvm"
 cd /home/ec2-user/myapp
 
 echo "Installing dependencies"
-npm install
+sudo npm install
 
 echo "Building the Next.js app"
-npm run build
+sudo npm run build
 
 echo "Restarting PM2"
 pm2 restart app1
